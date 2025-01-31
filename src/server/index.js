@@ -2,6 +2,7 @@ const fetch = require('node-fetch');
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 app.use(cors());
@@ -10,9 +11,14 @@ app.use(express.json());
 const API_KEY = process.env.MEANINGCLOUD_API_KEY;
 const BASE_URL = "https://api.meaningcloud.com/sentiment-2.1";
 
+
+
+app.use(express.static(path.join(__dirname, '../../dist')));
+
 app.get('/', function (req, res) {
-    res.send("This is the server API page, you may access its services via the client app.");
+    res.sendFile(path.join(__dirname, '../../dist/index.html'));
 });
+
 
 app.post('/analyze', async (req, res) => {
     const { url } = req.body;

@@ -29,7 +29,7 @@ plugins: [
     })
 ],
 devServer: {
-    port: 3000, // Default port for Webpack dev server is 8080
+    port: 3000, // Default port for Webpack dev server is 3000
     allowedHosts: 'all',
   }
 
