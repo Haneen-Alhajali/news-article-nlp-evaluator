@@ -24,8 +24,8 @@ To set up and run this project locally, follow these steps:
 
 1. 📥 Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd project-directory
+   git clone https://github.com/Haneen-Alhajali/news-article-nlp-evaluator
+   cd news-article-nlp-evaluator
    ```
 2. 📦 Install dependencies:
    ```bash
@@ -51,7 +51,7 @@ To set up and run this project locally, follow these steps:
         ```
 6. 🌐 Open your browser and go to:
    ```
-   http://localhost:8081
+   http://localhost:3000
    ```
 
 ## 🚀 Usage
