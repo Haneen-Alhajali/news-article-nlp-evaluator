@@ -51,7 +51,7 @@ To set up and run this project locally, follow these steps:
         ```
 6. 🌐 Open your browser and go to:
    ```
-   http://localhost:8081
+   http://localhost:3000
    ```
 
 ## 🚀 Usage
